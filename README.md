@@ -2,6 +2,9 @@
 
 A modern chat interface with powerful search capabilities built with Next.js 14, OpenSearch, and Tailwind CSS.
 
+![image](https://github.com/user-attachments/assets/f0fa04cc-3ae6-4a76-8a06-905811ad1607)
+
+
 ## Features
 
 - Real-time message search within conversations
