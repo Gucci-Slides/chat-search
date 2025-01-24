@@ -4,6 +4,9 @@ A modern chat interface with powerful search capabilities built with Next.js 14,
 
 ![image](https://github.com/user-attachments/assets/f0fa04cc-3ae6-4a76-8a06-905811ad1607)
 
+![image](https://github.com/user-attachments/assets/caba9b12-c5e6-49b1-887e-cc6498f4d8a0)
+
+
 
 ## Features
 
