@@ -1,0 +1,27 @@
+# Dockerfile.dev
+FROM node:18-alpine
+
+# Add a non-root user
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
+
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the code
+COPY . .
+
+# Set correct permissions
+RUN chown -R nextjs:nodejs /app
+
+# Switch to non-root user
+USER nextjs
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]

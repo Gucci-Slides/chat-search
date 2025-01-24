@@ -1,0 +1,101 @@
+{
+  "conversations": {
+    "mappings": {
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "username": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            }
+          }
+        },
+        "handle": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            }
+          }
+        },
+        "lastMessage": {
+          "type": "text"
+        },
+        "date": {
+          "type": "date"
+        },
+        "participants": {
+          "properties": {
+            "username": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword"
+                }
+              }
+            },
+            "handle": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "messages": {
+    "mappings": {
+      "properties": {
+        "id": {
+          "type": "keyword"
+        },
+        "conversationId": {
+          "type": "keyword"
+        },
+        "username": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            }
+          }
+        },
+        "handle": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            }
+          }
+        },
+        "text": {
+          "type": "text"
+        },
+        "date": {
+          "type": "date"
+        },
+        "mentions": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword"
+            }
+          }
+        },
+        "attachmentType": {
+          "type": "keyword"
+        },
+        "pinned": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
